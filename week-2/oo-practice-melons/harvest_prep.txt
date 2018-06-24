@@ -1,0 +1,4 @@
+Muskmelon|musk|1998|green|mint|True|True
+Casaba|cas|2003|orange|strawberries,mint|False|False
+Crenshaw|cren|1996|green|proscuitto|False|False
+Yellow Watermelon|yw|2013|yellow|ice cream|False|True
