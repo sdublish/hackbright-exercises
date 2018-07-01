@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+    {% block title %}Student Added!{% endblock %}
+
+{% block content %}
+  <h1>Student was successfully added!</h1>
+
+  <p><a href="/student?github={{request.form.get('github')}}">Click here to go to new student's info page.</a></p>
+  
+{% endblock %}

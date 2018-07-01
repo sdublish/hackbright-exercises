@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Assign Grade {% endblock %}
+{% block content %}
+<form action="/grade-add" method="POST">
+    Student Username: <select name="student">
+        {% for student in students %}
+        <option value="{{student[0]}}">{{student[0]}} </option>
+        {% endfor %}
+    </select><br>
+    Project Name:<select name="project">
+        {% for project in projects %}
+        <option value="{{project[0]}}">{{project[0]}} </option>
+        {% endfor %}
+    </select><br>
+    Grade: <input type="number" min="0" name="grade" required><br><br>
+    <input class="button" type="submit" value="Assign Grade">
+</form>
+{% endblock %}

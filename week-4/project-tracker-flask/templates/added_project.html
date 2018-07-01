@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+    {% block title %}Project Added!{% endblock %}
+
+{% block content %}
+  <h1>Project was successfully added!</h1>
+
+  <p><a href="/project?title={{request.form.get('title')}}">Click here to go to project page.</a></p>
+  
+{% endblock %}

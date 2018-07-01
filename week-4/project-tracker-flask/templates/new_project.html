@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %} Add New Project {% endblock %}
+{% block content %}
+<form action="/project-add" method="POST">
+    Project Title <input type="text" name="title"><br>
+    Project Description<br> <textarea name="description"> </textarea> <br>
+    Max Grade <input type="number" name="max-grade" min="1"> <br><br>
+    <input class="button" type="submit" value="Add Project">
+</form>
+{% endblock %}

@@ -1,0 +1,55 @@
+body {
+    background-color: lightyellow;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: green;
+}
+
+div {
+    display: inline-block;
+}
+
+.button {
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+}
+.homepage{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.ada {
+    width: 153px;
+    height: 221px;
+}
+
+input, textarea, select {
+    background-color: #80ced6;
+    border-color: lightyellow;
+    border-radius: 5px;
+}
+
+.nav-bar {
+    list-style-type: none;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0 2em;
+    border: 2px solid black;
+    margin: 0;
+}
+
+.nav-bar a {
+    text-decoration: none;
+}

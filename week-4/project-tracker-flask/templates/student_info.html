@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} {{ first }} {{ last }} {% endblock %}
+
+{% block content %}
+
+  <h1>{{ first }} {{ last }}</h1>
+
+  <p>GitHub Account: {{ github }}</p>
+
+  <ul>
+    {% for project in projects %}
+    <li>Project title: <a href="/project?title={{project[0]}}">{{ project[0] }}</a>, Project Grade: {{ project[1] }}</li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}

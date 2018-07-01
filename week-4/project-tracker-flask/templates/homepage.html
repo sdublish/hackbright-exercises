@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+  {% block title %}Homepage{% endblock %}
+
+{% block content %}
+<div>
+<h2 class="homepage"> Students </h2>
+
+<ul>
+    {% for student in students %}
+    <li>Student github: <a href="/student?github={{student[0]}}">{{ student[0] }}</a></li>
+    {% endfor %}
+</ul>
+
+
+
+<h2 class="homepage"> Projects </h2>
+<ul>
+    {% for project in projects %}
+    <li>Project title: <a href="/project?title={{project[0]}}">{{ project[0] }}</a></li>
+    {% endfor %}
+</ul>
+
+<p> Click <a href="/new-student">here</a> to add a new student<br>
+    Click <a href="/new-project">here</a> to add a new project<br>
+    Click <a href="/assign-grade">here</a> to assign a grade </p>
+    </div>
+
+<img class="ada" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg">
+
+
+{% endblock %}
